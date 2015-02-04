@@ -1,0 +1,24 @@
+{
+    "name": "jeroenvdheuve/reference-spotting",
+    "license": "MIT",
+    "type": "library",
+    "description": "Spot references",
+    "keywords": ["reference", "reference spotting", "reference spotter"],
+    "authors": [
+        {
+            "name": "Jeroen van den Heuvel",
+            "email": "jeroen.van.den.heuvel@werkspot.nl"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "jvdh\\ReferenceSpotting\\": ""
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0"
+    }
+}
