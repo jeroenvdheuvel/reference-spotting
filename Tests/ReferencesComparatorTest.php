@@ -36,19 +36,19 @@ class ReferencesComparatorTest extends \PHPUnit_Framework_TestCase
 
         $a = null;
         $b = &$a;
-        $data[] = [&$a, &$b];
+        $data[] = array(&$a, &$b);
 
-        $c = [1, 2];
+        $c = array(1, 2);
         $d = &$c;
-        $data[] = [&$c, &$d];
+        $data[] = array(&$c, &$d);
 
         $e = new \stdClass();
         $f = &$e;
-        $data[] = [&$e, &$f];
+        $data[] = array(&$e, &$f);
 
         $g = new \DateTime();
         $h = &$g;
-        $data[] = [&$g, &$h];
+        $data[] = array(&$g, &$h);
 
         return $data;
     }
