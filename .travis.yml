@@ -8,7 +8,7 @@ php:
   - hhvm
   - hhvm-nightly
 
-before_script:
-  - composer update --prefer-dist -o
+#before_script:
+#  - composer update --prefer-dist -o
 
-script: ./vendor/bin/phpunit --coverage-text
+script: phpunit --coverage-text
